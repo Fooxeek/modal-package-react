@@ -1,9 +1,9 @@
-# loganb-modal-react
+# modal-react-loganB
 
 A simple modal component for React.
 
 ## Installation
 
 ```bash
-npm install loganb-modal-react
+npm install modal-react-loganB
 ```
