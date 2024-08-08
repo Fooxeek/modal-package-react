@@ -1,0 +1,76 @@
+{
+  "name": "modal-react-loganb",
+  "version": "1.0.0",
+  "description": "A simple modal component for React",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "release": "release-it"
+  },
+  "author": "Foxeek",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-react": "^7.24.7",
+    "auto-changelog": "^2.4.0",
+    "release-it": "^17.6.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fooxeek/modal-package-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fooxeek/modal-package-react/issues"
+  },
+  "homepage": "https://github.com/Fooxeek/modal-package-react#readme",
+  "release-it": {
+    "npm": {
+      "publish": true,
+      "ignoreVersion": false,
+      "releaseType": "patch"
+    },
+    "git": {
+      "requireCleanWorkingDir": true,
+      "requireBranch": "main",
+      "tagName": "v${version}",
+      "commitMessage": "Release ${version}",
+      "tagAnnotation": "Release ${version}",
+      "push": true,
+      "changelog": "npx auto-changelog --stdout --commit-limit false --unreleased --template keepachangelog",
+      "assets": [
+        "lib/**",
+        "package.json",
+        "README.md",
+        "CHANGELOG.md"
+      ]
+    },
+    "github": {
+      "release": true,
+      "releaseName": "Release ${version}"
+    },
+    "hooks": {
+      "before:init": [
+        "npm run build"
+      ],
+      "before:git:release": [
+        "npx auto-changelog -p",
+        "git add CHANGELOG.md",
+        "git commit -m \"Update CHANGELOG.md for \\${version}\""
+      ],
+      "after:bump": [
+        "npm run build"
+      ]
+    }
+  }
+}
