@@ -1,4 +1,4 @@
-# modal-react-loganB
+# modal-react-loganb
 
 A simple modal component for React.
 
