@@ -34,6 +34,22 @@
     "url": "https://github.com/Fooxeek/modal-package-react/issues"
   },
   "homepage": "https://github.com/Fooxeek/modal-package-react#readme",
+  "keywords": [
+    "react",
+    "react-component",
+    "modal",
+    "popup",
+    "dialog",
+    "ui",
+    "user-interface",
+    "react-modal",
+    "component-library",
+    "npm-package",
+    "reactjs",
+    "frontend",
+    "javascript",
+    "ui-component"
+  ],
   "release-it": {
     "npm": {
       "publish": true,
