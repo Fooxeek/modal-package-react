@@ -10,7 +10,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "babel src --out-dir lib && copyfiles -u 1 src/**/*.css lib",
     "release": "release-it"
   },
   "author": "Foxeek",
