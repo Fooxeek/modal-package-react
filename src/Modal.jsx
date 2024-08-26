@@ -35,7 +35,7 @@ export default function Modal({ isVisible, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-6 rounded shadow-lg max-w-sm w-full">
+      <div className="bg-white p-6 rounded shadow-lg">
         <h2 className="text-xl font-bold mb-4">Employee Created</h2>
         <p>The employee has been successfully created.</p>
         <button
