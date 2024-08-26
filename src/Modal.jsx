@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./Modal.css";
+import "./modal.css";
 
 /**
  * Modal component for displaying a centered popup on the screen.
