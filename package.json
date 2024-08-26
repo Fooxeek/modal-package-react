@@ -1,6 +1,6 @@
 {
   "name": "modal-react-loganb",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple modal component for React",
   "main": "index.js",
   "files": [
